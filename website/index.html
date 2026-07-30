@@ -1,0 +1,956 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Action Population Plus (APP) – ONG de développement au Togo. Santé, éducation, femmes, orphelins, agriculture." />
+  <title>Action Population Plus (APP) – ONG Togo</title>
+  <link rel="icon" type="image/jpeg" href="images/logo.jpeg" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+<!-- =============================================
+     NAVIGATION
+     ============================================= -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="#accueil" class="nav-brand">
+      <img src="images/logo.jpeg" alt="Logo APP" class="nav-logo" />
+      <div class="nav-name">
+        <span class="acronym">APP</span>
+        <span class="full-name">Action Population Plus</span>
+      </div>
+    </a>
+
+    <ul class="nav-links">
+      <li><a href="#about" data-i18n="nav.about">À Propos</a></li>
+      <li><a href="#programmes" data-i18n="nav.programmes">Programmes</a></li>
+      <li><a href="#actualites" data-i18n="nav.actualites">Actualités</a></li>
+      <li><a href="#galerie" data-i18n="nav.galerie">Galerie</a></li>
+      <li><a href="#partenaires" data-i18n="nav.partenaires">Partenaires</a></li>
+      <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+      <li><a href="#dons" class="btn-nav-don"><i class="fas fa-heart"></i> <span data-i18n="nav.donate">Faire un Don</span></a></li>
+    </ul>
+
+    <div class="lang-switcher">
+      <button class="lang-btn active" data-lang="fr" title="Français">🇫🇷</button>
+      <button class="lang-btn" data-lang="en" title="English">🇬🇧</button>
+      <button class="lang-btn" data-lang="de" title="Deutsch">🇩🇪</button>
+    </div>
+
+    <div class="nav-toggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>
+
+<!-- =============================================
+     HERO SECTION
+     ============================================= -->
+<section id="accueil" style="min-height:100vh;">
+  <div id="hero">
+    <div class="hero-bg-shapes">
+      <div class="hero-shape hero-shape-1"></div>
+      <div class="hero-shape hero-shape-2"></div>
+      <div class="hero-shape hero-shape-3"></div>
+      <div class="hero-particles"></div>
+    </div>
+
+    <div class="hero-content">
+      <div class="hero-text">
+        <div class="badge">
+          <span class="dot"></span>
+          <span data-i18n="hero.badge">ONG reconnue • Togo depuis 2003</span>
+        </div>
+        <h1>
+          <span class="gold">Action</span><br />
+          Population<br />
+          Plus
+        </h1>
+        <p class="subtitle" data-i18n="hero.subtitle">
+          Contribuer au développement harmonieux et intégral<br />
+          des populations urbaines et rurales du Togo.
+        </p>
+        <blockquote class="hero-quote">
+          <p data-i18n="hero.quote">« Nous devons apprendre à vivre ensemble comme des frères, sinon nous allons mourir tous ensemble comme des idiots. »</p>
+          <cite>— Martin Luther King Jr.</cite>
+        </blockquote>
+        <div class="hero-buttons">
+          <a href="#about" class="btn btn-primary">
+            <i class="fas fa-info-circle"></i> <span data-i18n="hero.discover">Découvrir l'APP</span>
+          </a>
+          <a href="#dons" class="btn btn-outline">
+            <i class="fas fa-hand-holding-heart"></i> <span data-i18n="nav.donate">Faire un Don</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-logo-card">
+          <img src="images/logo.jpeg" alt="Logo Action Population Plus" />
+          <div class="org-name">ACTION POPULATION PLUS</div>
+          <div class="org-tagline" data-i18n="hero.tagline">FAIRE PLUS POUR LES PROBLÈMES DE POPULATION</div>
+        </div>
+        <div class="hero-stats-row">
+          <div class="hero-stat">
+            <div class="num">22+</div>
+            <div class="lbl" data-i18n="hero.stat1">Années d'expérience</div>
+          </div>
+          <div class="hero-stat">
+            <div class="num">5+</div>
+            <div class="lbl" data-i18n="hero.stat2">Programmes actifs</div>
+          </div>
+          <div class="hero-stat">
+            <div class="num">3</div>
+            <div class="lbl" data-i18n="hero.stat3">Régions couvertes</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-indicator">
+      <span data-i18n="hero.scroll">Défiler</span>
+      <div class="arrow"></div>
+    </div>
+  </div>
+</section>
+
+<!-- =============================================
+     À PROPOS
+     ============================================= -->
+<section id="about" class="section-pad">
+  <div class="container">
+    <div class="about-grid">
+
+      <div class="about-images fade-in-left">
+        <img src="images/veuve_panel1.jpeg" alt="Journée Internationale de la Veuve" class="about-img-main" />
+        <img src="images/campagne1.jpeg" alt="Campagne de Sensibilisation" class="about-img-secondary" />
+        <div class="about-badge">
+          <div class="num">2003</div>
+          <div class="txt" data-i18n="about.badge.txt">Fondée</div>
+        </div>
+      </div>
+
+      <div class="about-text fade-in-right">
+        <div class="section-header">
+          <span class="label" data-i18n="about.label">Qui sommes-nous ?</span>
+          <h2 data-i18n="about.h2">Une ONG au service <span>des communautés</span></h2>
+          <div class="divider"></div>
+        </div>
+
+        <p class="about-desc" data-i18n="about.desc">
+          L'<strong>ONG Action Population Plus (APP)</strong> est une organisation non gouvernementale de développement officiellement reconnue par l'État togolais. Fondée en 2003 et basée à Lomé, l'APP œuvre pour l'amélioration des conditions de vie et de la qualité de vie des populations urbaines et rurales du Togo à travers des activités socio-économiques, culturelles, sportives et environnementales.
+        </p>
+
+        <div class="about-recognition" data-i18n="about.recognition">
+          <p>
+            <strong>Récépissé N° 0395/MISD-SG-DAPSC-DSC</strong> délivré le 16 avril 2003<br />
+            <strong>Attestation de Qualité N° 460/MCDAT</strong> délivrée le 28 août 2008<br />
+            Opérant dans les régions de <strong>Lomé, Kara et Sara</strong>
+          </p>
+        </div>
+
+        <div class="about-features">
+          <div class="about-feature">
+            <div class="icon"><i class="fas fa-bullseye"></i></div>
+            <div>
+              <h4 data-i18n="about.mission.title">Notre Mission</h4>
+              <p data-i18n="about.mission.text">Contribuer au développement harmonieux et intégral des populations en améliorant leurs conditions de vie socio-économiques, culturelles et environnementales.</p>
+            </div>
+          </div>
+          <div class="about-feature">
+            <div class="icon gold"><i class="fas fa-eye"></i></div>
+            <div>
+              <h4 data-i18n="about.vision.title">Notre Vision</h4>
+              <p data-i18n="about.vision.text">Un Togo où chaque individu, quel que soit son milieu, bénéficie d'un accès équitable aux soins, à l'éducation et à des opportunités économiques durables.</p>
+            </div>
+          </div>
+          <div class="about-feature">
+            <div class="icon green"><i class="fas fa-handshake"></i></div>
+            <div>
+              <h4 data-i18n="about.values.title">Nos Valeurs</h4>
+              <p data-i18n="about.values.text">Solidarité, intégrité, inclusivité et engagement envers les communautés les plus vulnérables : femmes, enfants, veuves et agriculteurs.</p>
+            </div>
+          </div>
+        </div>
+
+        <a href="#programmes" class="btn btn-blue">
+          <i class="fas fa-arrow-right"></i> <span data-i18n="about.btn">Nos programmes</span>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- =============================================
+     PROGRAMMES
+     ============================================= -->
+<section id="programmes" class="section-pad">
+  <div class="container">
+    <div class="section-header text-center fade-in">
+      <span class="label" data-i18n="prog.label">Ce que nous faisons</span>
+      <h2 data-i18n="prog.h2">Nos <span>Programmes</span></h2>
+      <p data-i18n="prog.desc">L'APP intervient dans six domaines clés pour répondre aux défis de développement des communautés togolaises.</p>
+      <div class="divider"></div>
+    </div>
+
+    <div class="programmes-grid">
+
+      <!-- Santé -->
+      <div class="programme-card fade-in delay-1">
+        <div class="programme-card-img">
+          <img src="images/sante1.jpeg" alt="Santé Communautaire" />
+          <div class="overlay"></div>
+          <div class="programme-icon" style="background: linear-gradient(135deg,#1B4F8A,#2E6DB4);">
+            <i class="fas fa-heartbeat" style="color:#fff;"></i>
+          </div>
+        </div>
+        <div class="programme-card-body">
+          <h3 data-i18n="prog.sante.title">Santé Communautaire</h3>
+          <p data-i18n="prog.sante.text">Campagnes de bilans de santé, sensibilisation au VIH/SIDA et aux maladies chroniques. Nos équipes de terrain portant les vestes APP se déploient dans les communautés rurales et urbaines.</p>
+          <div class="programme-tags">
+            <span class="programme-tag" data-i18n="prog.sante.tag1">Bilan de Santé</span>
+            <span class="programme-tag">VIH/SIDA</span>
+            <span class="programme-tag" data-i18n="prog.sante.tag3">Terrain</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Enfants & Orphelins -->
+      <div class="programme-card fade-in delay-2">
+        <div class="programme-card-img">
+          <img src="images/campagne2.jpeg" alt="Enfants et Orphelins" />
+          <div class="overlay"></div>
+          <div class="programme-icon" style="background: linear-gradient(135deg,#F5A623,#D4891A);">
+            <i class="fas fa-child" style="color:#fff;"></i>
+          </div>
+        </div>
+        <div class="programme-card-body">
+          <h3 data-i18n="prog.enfants.title">Enfants &amp; Orphelins</h3>
+          <p data-i18n="prog.enfants.text">Actions humanitaires en faveur des orphelins via notre programme "La Lumière" en partenariat avec l'Association AVI Togo, qui gère 4 orphelinats et un centre de santé.</p>
+          <div class="programme-tags">
+            <span class="programme-tag" data-i18n="prog.enfants.tag1">Orphelinats</span>
+            <span class="programme-tag">AVI Togo</span>
+            <span class="programme-tag" data-i18n="prog.enfants.tag3">Humanitaire</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sensibilisation -->
+      <div class="programme-card fade-in delay-3">
+        <div class="programme-card-img">
+          <img src="images/campagne1.jpeg" alt="Campagnes de Sensibilisation" />
+          <div class="overlay"></div>
+          <div class="programme-icon" style="background: linear-gradient(135deg,#27AE60,#1E8449);">
+            <i class="fas fa-bullhorn" style="color:#fff;"></i>
+          </div>
+        </div>
+        <div class="programme-card-body">
+          <h3 data-i18n="prog.sensib.title">Campagnes de Sensibilisation</h3>
+          <p data-i18n="prog.sensib.text">Mobilisation communautaire sur les grandes questions de santé publique, de droits des enfants et de planning familial. L'édition du 08 mai 2025 a réuni plus de 40 participants.</p>
+          <div class="programme-tags">
+            <span class="programme-tag" data-i18n="prog.sensib.tag1">Mobilisation</span>
+            <span class="programme-tag" data-i18n="prog.sensib.tag2">Droits enfants</span>
+            <span class="programme-tag" data-i18n="prog.sensib.tag3">Planning familial</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Femmes & Veuves -->
+      <div class="programme-card fade-in delay-1">
+        <div class="programme-card-img">
+          <img src="images/veuve_repas.jpeg" alt="Journée Internationale de la Veuve" />
+          <div class="overlay"></div>
+          <div class="programme-icon" style="background: linear-gradient(135deg,#8E44AD,#6C3483);">
+            <i class="fas fa-venus" style="color:#fff;"></i>
+          </div>
+        </div>
+        <div class="programme-card-body">
+          <h3 data-i18n="prog.femmes.title">Femmes &amp; Veuves</h3>
+          <p data-i18n="prog.femmes.text">Célébration annuelle de la Journée Internationale de la Veuve — Édition 2025 à Kara — offrant soutien moral, repas communautaire et plaidoyer pour les droits des femmes veuves.</p>
+          <div class="programme-tags">
+            <span class="programme-tag">AFES-TO</span>
+            <span class="programme-tag" data-i18n="prog.femmes.tag2">Veuvage</span>
+            <span class="programme-tag">Kara 2025</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Formation & Éducation -->
+      <div class="programme-card fade-in delay-2">
+        <div class="programme-card-img">
+          <img src="images/formation1.jpeg" alt="Formation et Éducation" />
+          <div class="overlay"></div>
+          <div class="programme-icon" style="background: linear-gradient(135deg,#E74C3C,#C0392B);">
+            <i class="fas fa-graduation-cap" style="color:#fff;"></i>
+          </div>
+        </div>
+        <div class="programme-card-body">
+          <h3 data-i18n="prog.formation.title">Formation &amp; Éducation</h3>
+          <p data-i18n="prog.formation.text">Programme AFEDI (Appui Formatif en Éducation pour le Développement Intégral) : formations des femmes, des jeunes et des éducateurs pour renforcer les capacités locales.</p>
+          <div class="programme-tags">
+            <span class="programme-tag">AFEDI</span>
+            <span class="programme-tag" data-i18n="prog.formation.tag2">Formation</span>
+            <span class="programme-tag" data-i18n="prog.formation.tag3">Jeunesse</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Agriculture & Paysans -->
+      <div class="programme-card fade-in delay-3">
+        <div class="programme-card-img">
+          <img src="images/formation2.jpeg" alt="Agriculture et Paysans" />
+          <div class="overlay"></div>
+          <div class="programme-icon" style="background: linear-gradient(135deg,#16A085,#0E6655);">
+            <i class="fas fa-seedling" style="color:#fff;"></i>
+          </div>
+        </div>
+        <div class="programme-card-body">
+          <h3 data-i18n="prog.agri.title">Agriculture &amp; Paysans</h3>
+          <p data-i18n="prog.agri.text">Aide aux paysans en période de soudure alimentaire. Formation en biométhanisation pour une agriculture durable, et soutien au Comité pour le Développement Intégral de Sara (CODISA).</p>
+          <div class="programme-tags">
+            <span class="programme-tag">CODISA</span>
+            <span class="programme-tag" data-i18n="prog.agri.tag2">Biométhanisation</span>
+            <span class="programme-tag">Sara</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- =============================================
+     IMPACT EN CHIFFRES
+     ============================================= -->
+<section id="impact" class="section-pad">
+  <div class="container">
+    <div class="impact-inner">
+      <div class="section-header text-center fade-in" style="margin-bottom:56px;">
+        <span class="label" style="background:rgba(245,166,35,0.2);color:var(--gold);" data-i18n="impact.label">Notre Impact</span>
+        <h2 class="text-white" data-i18n="impact.h2">L'APP en <span style="color:var(--gold);">Chiffres</span></h2>
+        <div class="divider"></div>
+      </div>
+      <div class="impact-grid">
+        <div class="impact-card fade-in delay-1">
+          <span class="icon">📅</span>
+          <div class="num"><span class="count-up" data-target="22" data-suffix="+">0</span></div>
+          <div class="label" data-i18n="impact.label1">Années d'expérience au service des communautés togolaises</div>
+        </div>
+        <div class="impact-card fade-in delay-2">
+          <span class="icon">👥</span>
+          <div class="num"><span class="count-up" data-target="5000" data-suffix="+">0</span></div>
+          <div class="label" data-i18n="impact.label2">Bénéficiaires touchés par nos programmes et activités</div>
+        </div>
+        <div class="impact-card fade-in delay-3">
+          <span class="icon">🏥</span>
+          <div class="num"><span class="count-up" data-target="6" data-suffix="">0</span></div>
+          <div class="label" data-i18n="impact.label3">Programmes actifs couvrant santé, éducation et développement</div>
+        </div>
+        <div class="impact-card fade-in delay-4">
+          <span class="icon">📍</span>
+          <div class="num"><span class="count-up" data-target="3" data-suffix="">0</span></div>
+          <div class="label" data-i18n="impact.label4">Régions d'intervention : Lomé, Kara et Sara (P/Kozah)</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =============================================
+     ACTUALITÉS
+     ============================================= -->
+<section id="actualites" class="section-pad">
+  <div class="container">
+    <div class="section-header text-center fade-in">
+      <span class="label" data-i18n="actu.label">Nos Activités</span>
+      <h2 data-i18n="actu.h2">Actualités &amp; <span>Événements</span></h2>
+      <p data-i18n="actu.desc">Découvrez nos dernières activités et événements réalisés sur le terrain au Togo.</p>
+      <div class="divider"></div>
+    </div>
+
+    <div class="events-grid">
+
+      <!-- Événement vedette -->
+      <div class="event-card featured fade-in-left">
+        <div class="event-img">
+          <img src="images/veuve_panel1.jpeg" alt="Journée Internationale de la Veuve 2025" />
+          <span class="event-category gold" data-i18n="actu.event1.category">Événement Majeur</span>
+        </div>
+        <div class="event-body">
+          <div class="event-date">
+            <i class="fas fa-calendar-alt"></i> 2025 &nbsp;•&nbsp;
+            <i class="fas fa-map-marker-alt"></i> Kara, Togo
+          </div>
+          <h3 data-i18n="actu.event1.title">Journée Internationale de la Veuve – Édition 2025 à Kara</h3>
+          <p data-i18n="actu.event1.text">L'ONG APP a organisé la célébration de la Journée Internationale de la Veuve à Kara. Cet événement a rassemblé des femmes veuves, des responsables communautaires et des partenaires pour un temps fort de solidarité, de plaidoyer et de partage d'un repas communautaire.</p>
+          <a href="#galerie" class="event-link"><span data-i18n="actu.see_photos">Voir les photos</span> <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <!-- Campagne de sensibilisation -->
+      <div class="event-card fade-in delay-2">
+        <div class="event-img">
+          <img src="images/campagne1.jpeg" alt="Campagne de Sensibilisation VIH" />
+          <span class="event-category blue" data-i18n="actu.event2.category">Santé Publique</span>
+        </div>
+        <div class="event-body">
+          <div class="event-date">
+            <i class="fas fa-calendar-alt"></i> 08 Mai 2025 &nbsp;•&nbsp;
+            <i class="fas fa-map-marker-alt"></i> Lomé
+          </div>
+          <h3 data-i18n="actu.event2.title">Campagne de Sensibilisation VIH/SIDA</h3>
+          <p data-i18n="actu.event2.text">Plus de 40 jeunes participants à la Place de la Victoire pour cette campagne sur le thème de la santé publique à l'horizon 2030.</p>
+          <a href="#galerie" class="event-link"><span data-i18n="actu.see_photos">Voir les photos</span> <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <!-- Bilan de santé terrain -->
+      <div class="event-card fade-in delay-3">
+        <div class="event-img">
+          <img src="images/sante1.jpeg" alt="Bilan de Santé Terrain" />
+          <span class="event-category green" data-i18n="actu.event3.category">Santé Terrain</span>
+        </div>
+        <div class="event-body">
+          <div class="event-date">
+            <i class="fas fa-calendar-alt"></i> 2025 &nbsp;•&nbsp;
+            <i class="fas fa-map-marker-alt"></i> Togo
+          </div>
+          <h3 data-i18n="actu.event3.title">Projet Bilan de Santé Communautaire</h3>
+          <p data-i18n="actu.event3.text">Nos équipes en vestes APP ont mené des consultations de terrain, recueillant les données de santé des populations vulnérables dans les quartiers défavorisés.</p>
+          <a href="#galerie" class="event-link"><span data-i18n="actu.see_photos">Voir les photos</span> <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- =============================================
+     GALERIE
+     ============================================= -->
+<section id="galerie" class="section-pad">
+  <div class="container">
+    <div class="section-header text-center fade-in">
+      <span class="label" data-i18n="galerie.label">Nos Photos</span>
+      <h2 data-i18n="galerie.h2">Galerie <span>d'Activités</span></h2>
+      <p data-i18n="galerie.desc">Images de nos activités sur le terrain, événements communautaires et formations.</p>
+      <div class="divider"></div>
+    </div>
+
+    <div class="gallery-filter fade-in">
+      <button class="filter-btn active" data-filter="all" data-i18n="galerie.filter.all">Toutes</button>
+      <button class="filter-btn" data-filter="sensibilisation" data-i18n="galerie.filter.sensib">Sensibilisation</button>
+      <button class="filter-btn" data-filter="veuve" data-i18n="galerie.filter.veuve">Journée Veuve</button>
+      <button class="filter-btn" data-filter="sante" data-i18n="galerie.filter.sante">Santé</button>
+      <button class="filter-btn" data-filter="formation" data-i18n="galerie.filter.formation">Formation</button>
+    </div>
+
+    <div class="gallery-grid">
+      <!-- Campagne sensibilisation -->
+      <div class="gallery-item span2" data-cat="sensibilisation">
+        <img src="images/campagne1.jpeg" alt="Campagne de Sensibilisation VIH/SIDA" />
+        <div class="gallery-overlay">
+          <div class="cat" data-i18n="cat.sensibilisation">Sensibilisation</div>
+          <div class="title" data-i18n="gallery.sensib1">Campagne VIH/SIDA – Place de la Victoire, 08 Mai 2025</div>
+        </div>
+      </div>
+      <div class="gallery-item" data-cat="sensibilisation">
+        <img src="images/campagne2.jpeg" alt="Campagne de Sensibilisation" />
+        <div class="gallery-overlay">
+          <div class="cat" data-i18n="cat.sensibilisation">Sensibilisation</div>
+          <div class="title" data-i18n="gallery.sensib2">Mobilisation communautaire</div>
+        </div>
+      </div>
+      <div class="gallery-item" data-cat="sensibilisation">
+        <img src="images/campagne3.jpeg" alt="Équipe sensibilisation" />
+        <div class="gallery-overlay">
+          <div class="cat" data-i18n="cat.sensibilisation">Sensibilisation</div>
+          <div class="title" data-i18n="gallery.sensib3">Équipe et participants</div>
+        </div>
+      </div>
+
+      <!-- Journée de la Veuve -->
+      <div class="gallery-item" data-cat="veuve">
+        <img src="images/veuve_panel1.jpeg" alt="Journée Internationale de la Veuve" />
+        <div class="gallery-overlay">
+          <div class="cat" data-i18n="cat.veuve">Journée Veuve</div>
+          <div class="title" data-i18n="gallery.veuve1">Panel – Kara 2025</div>
+        </div>
+      </div>
+      <div class="gallery-item" data-cat="veuve">
+        <img src="images/veuve_panel2.jpeg" alt="Panel Journée Veuve" />
+        <div class="gallery-overlay">
+          <div class="cat" data-i18n="cat.veuve">Journée Veuve</div>
+          <div class="title" data-i18n="gallery.veuve2">Allocution officielle</div>
+        </div>
+      </div>
+      <div class="gallery-item span2" data-cat="veuve">
+        <img src="images/veuve_repas.jpeg" alt="Repas Journée Veuve" />
+        <div class="gallery-overlay">
+          <div class="cat" data-i18n="cat.veuve">Journée Veuve</div>
+          <div class="title" data-i18n="gallery.veuve3">Distribution de repas communautaire – Kara 2025</div>
+        </div>
+      </div>
+      <div class="gallery-item" data-cat="veuve">
+        <img src="images/veuve_repas2.jpeg" alt="Distribution Repas" />
+        <div class="gallery-overlay">
+          <div class="cat" data-i18n="cat.veuve">Journée Veuve</div>
+          <div class="title" data-i18n="gallery.veuve4">Solidarité et partage</div>
+        </div>
+      </div>
+      <div class="gallery-item" data-cat="veuve">
+        <img src="images/veuve_panel3.jpeg" alt="Journée Veuve participants" />
+        <div class="gallery-overlay">
+          <div class="cat" data-i18n="cat.veuve">Journée Veuve</div>
+          <div class="title" data-i18n="gallery.veuve5">Participants à l'événement</div>
+        </div>
+      </div>
+
+      <!-- Santé Terrain -->
+      <div class="gallery-item span2" data-cat="sante">
+        <img src="images/equipe1.jpeg" alt="Équipe Santé Terrain" />
+        <div class="gallery-overlay">
+          <div class="cat" data-i18n="cat.sante">Santé</div>
+          <div class="title" data-i18n="gallery.sante1">Équipe de la Campagne de Sensibilisation 2025</div>
+        </div>
+      </div>
+      <div class="gallery-item" data-cat="sante">
+        <img src="images/sante1.jpeg" alt="Agent de santé terrain" />
+        <div class="gallery-overlay">
+          <div class="cat" data-i18n="cat.sante_terrain">Santé Terrain</div>
+          <div class="title" data-i18n="gallery.sante2">Collecte de données – bilan de santé</div>
+        </div>
+      </div>
+      <div class="gallery-item" data-cat="sante">
+        <img src="images/sante2.jpeg" alt="Consultation terrain" />
+        <div class="gallery-overlay">
+          <div class="cat" data-i18n="cat.sante_terrain">Santé Terrain</div>
+          <div class="title" data-i18n="gallery.sante3">Équipe en vestes APP</div>
+        </div>
+      </div>
+      <div class="gallery-item" data-cat="sante">
+        <img src="images/sante3.jpeg" alt="Bilan de santé" />
+        <div class="gallery-overlay">
+          <div class="cat" data-i18n="cat.sante">Santé</div>
+          <div class="title" data-i18n="gallery.sante4">Consultation communautaire</div>
+        </div>
+      </div>
+      <div class="gallery-item" data-cat="sante">
+        <img src="images/sante4.jpeg" alt="Enregistrement patients" />
+        <div class="gallery-overlay">
+          <div class="cat" data-i18n="cat.sante">Santé</div>
+          <div class="title" data-i18n="gallery.sante5">Enregistrement des bénéficiaires</div>
+        </div>
+      </div>
+
+      <!-- Formation -->
+      <div class="gallery-item" data-cat="formation">
+        <img src="images/formation1.jpeg" alt="Formation communautaire" />
+        <div class="gallery-overlay">
+          <div class="cat" data-i18n="cat.formation">Formation</div>
+          <div class="title" data-i18n="gallery.formation1">Séance de formation AFEDI</div>
+        </div>
+      </div>
+      <div class="gallery-item span2" data-cat="formation">
+        <img src="images/formation3.jpeg" alt="Formation des femmes" />
+        <div class="gallery-overlay">
+          <div class="cat" data-i18n="cat.formation">Formation</div>
+          <div class="title" data-i18n="gallery.formation2">Formation des femmes de la communauté</div>
+        </div>
+      </div>
+      <div class="gallery-item" data-cat="formation">
+        <img src="images/formation4.jpeg" alt="Session formation" />
+        <div class="gallery-overlay">
+          <div class="cat" data-i18n="cat.formation">Formation</div>
+          <div class="title" data-i18n="gallery.formation3">Appui formatif en éducation</div>
+        </div>
+      </div>
+      <div class="gallery-item" data-cat="formation">
+        <img src="images/formation5.jpeg" alt="Formation AFEDI" />
+        <div class="gallery-overlay">
+          <div class="cat" data-i18n="cat.formation">Formation</div>
+          <div class="title" data-i18n="gallery.formation4">Programme AFEDI en action</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- =============================================
+     PARTENAIRES
+     ============================================= -->
+<section id="partenaires" class="section-pad">
+  <div class="container">
+    <div class="section-header text-center fade-in">
+      <span class="label" data-i18n="partenaires.label">Ils nous soutiennent</span>
+      <h2 data-i18n="partenaires.h2">Nos <span>Partenaires</span></h2>
+      <p data-i18n="partenaires.desc">L'APP collabore avec des organisations partageant les mêmes valeurs de développement communautaire et de solidarité.</p>
+      <div class="divider"></div>
+    </div>
+
+    <div class="partners-grid">
+      <div class="partner-card fade-in delay-1">
+        <div class="partner-icon" style="background:rgba(27,79,138,0.1);">
+          <span style="font-size:32px;">🏠</span>
+        </div>
+        <h3>Association AVI Togo</h3>
+        <p data-i18n="partenaires.avi.text">Partenaire clé de l'APP dans le soutien aux orphelins, gérant 4 orphelinats et un centre de santé pour les enfants vulnérables au Togo.</p>
+      </div>
+
+      <div class="partner-card fade-in delay-2">
+        <div class="partner-icon" style="background:rgba(39,174,96,0.1);">
+          <span style="font-size:32px;">🏥</span>
+        </div>
+        <h3>Clinique Kondjigan</h3>
+        <p data-i18n="partenaires.kondjigan.text">Partenaire santé basée à Djidjolé, travaillant avec l'APP sur des projets de santé communautaire et d'accès aux soins pour les populations défavorisées.</p>
+      </div>
+
+      <div class="partner-card fade-in delay-3">
+        <div class="partner-icon" style="background:rgba(245,166,35,0.1);">
+          <span style="font-size:32px;">📡</span>
+        </div>
+        <h3>Moov Africa</h3>
+        <p data-i18n="partenaires.moov.text">Sponsor officiel lors des événements communautaires de l'APP, contribuant à la visibilité et au rayonnement des actions de l'organisation sur le terrain.</p>
+      </div>
+    </div>
+
+    <div class="become-partner fade-in">
+      <h3 data-i18n="partenaires.become.title">Devenez Partenaire de l'APP</h3>
+      <p data-i18n="partenaires.become.text">Vous partagez notre vision d'un Togo solidaire et développé ? Rejoignez notre réseau de partenaires et contribuez à des actions concrètes sur le terrain.</p>
+      <a href="#contact" class="btn btn-primary">
+        <i class="fas fa-handshake"></i> <span data-i18n="partenaires.become.btn">Nous contacter</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- =============================================
+     FAIRE UN DON
+     ============================================= -->
+<section id="dons" class="section-pad">
+  <div class="container">
+    <div class="dons-layout">
+
+      <div class="dons-text">
+        <div class="section-header">
+          <span class="label" data-i18n="dons.label">Soutenez-nous</span>
+          <h2 data-i18n="dons.h2">Faire un <span>Don</span></h2>
+          <div class="divider"></div>
+        </div>
+        <p data-i18n="dons.text">
+          Votre soutien financier est essentiel pour permettre à l'APP de poursuivre ses missions auprès des populations les plus vulnérables du Togo. Chaque contribution, quelle que soit sa taille, a un impact réel sur le terrain.
+        </p>
+        <p data-i18n="dons.choose">Choisissez un montant ou indiquez le vôtre :</p>
+
+        <div class="dons-amounts">
+          <button class="amount-btn">5 000 FCFA</button>
+          <button class="amount-btn active">10 000 FCFA</button>
+          <button class="amount-btn">25 000 FCFA</button>
+          <button class="amount-btn">50 000 FCFA</button>
+          <button class="amount-btn" data-i18n="dons.other">Autre montant</button>
+        </div>
+
+        <div class="payment-methods">
+          <h4><i class="fas fa-wallet"></i> <span data-i18n="dons.methods.title">Moyens de paiement disponibles</span></h4>
+          <div class="methods-grid">
+            <div class="method-card">
+              <div class="method-icon" style="background:#F9E7C2;">📱</div>
+              <div>
+                <h5>T-Money</h5>
+                <span>+228 90 10 96 23</span>
+              </div>
+            </div>
+            <div class="method-card">
+              <div class="method-icon" style="background:#D5F5E3;">📱</div>
+              <div>
+                <h5>Flooz</h5>
+                <span>+228 97 13 70 70</span>
+              </div>
+            </div>
+            <div class="method-card">
+              <div class="method-icon" style="background:#D6EAF8;">💸</div>
+              <div>
+                <h5>MoneyGram</h5>
+                <span data-i18n="dons.intl_transfer">Transfert international</span>
+              </div>
+            </div>
+            <div class="method-card">
+              <div class="method-icon" style="background:#FADBD8;">💸</div>
+              <div>
+                <h5>Western Union / Ria</h5>
+                <span data-i18n="dons.intl_transfer">Transfert international</span>
+              </div>
+            </div>
+            <div class="method-card">
+              <div class="method-icon" style="background:#EAD9F7;">🏦</div>
+              <div>
+                <h5 data-i18n="dons.bank">Virement Bancaire</h5>
+                <span data-i18n="dons.on_request">Sur demande</span>
+              </div>
+            </div>
+            <div class="method-card">
+              <div class="method-icon" style="background:#FDEBD0;">✉️</div>
+              <div>
+                <h5 data-i18n="dons.other_method">Autres méthodes</h5>
+                <span data-i18n="dons.contact_us">Nous contacter</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="dons-impact fade-in-right">
+        <h3 data-i18n="dons.impact.title">💛 Ce que votre don permet</h3>
+        <div class="impact-items">
+          <div class="impact-item">
+            <div class="amount">5 000 F</div>
+            <p data-i18n="dons.impact1"><strong>Kits d'hygiène</strong> pour 2 enfants d'un orphelinat partenaire de l'APP.</p>
+          </div>
+          <div class="impact-item">
+            <div class="amount">10 000 F</div>
+            <p data-i18n="dons.impact2"><strong>Participation</strong> à une campagne de sensibilisation santé dans un quartier défavorisé.</p>
+          </div>
+          <div class="impact-item">
+            <div class="amount">25 000 F</div>
+            <p data-i18n="dons.impact3"><strong>Formation</strong> d'un groupe de femmes aux techniques d'autonomisation économique.</p>
+          </div>
+          <div class="impact-item">
+            <div class="amount">50 000 F</div>
+            <p data-i18n="dons.impact4"><strong>Soutien alimentaire</strong> aux veuves et familles vulnérables lors des événements APP.</p>
+          </div>
+          <div class="impact-item">
+            <div class="amount">100 000 F</div>
+            <p data-i18n="dons.impact5"><strong>Financement</strong> d'une mission de bilan de santé terrain dans une zone rurale.</p>
+          </div>
+        </div>
+        <div class="dons-impact-cta">
+          <a href="#contact" class="btn btn-green" style="width:100%; justify-content:center;">
+            <i class="fas fa-heart"></i> <span data-i18n="dons.cta">Je fais un don maintenant</span>
+          </a>
+          <p style="font-size:12px;color:var(--text-light);margin-top:12px;" data-i18n="dons.receipt">
+            Pour tout don, contactez-nous directement via le formulaire ou par téléphone.<br />
+            Un reçu peut être fourni sur demande.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- =============================================
+     CONTACT
+     ============================================= -->
+<section id="contact" class="section-pad">
+  <div class="container">
+    <div class="contact-layout">
+
+      <div class="contact-info fade-in-left">
+        <div class="section-header">
+          <span class="label" data-i18n="contact.label">Contactez-nous</span>
+          <h2 data-i18n="contact.h2">Restons en <span>Contact</span></h2>
+          <div class="divider"></div>
+        </div>
+
+        <div class="contact-cards">
+          <div class="contact-card">
+            <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <h4 data-i18n="contact.address.title">Siège Social</h4>
+              <p data-i18n="contact.address.text">Lomé, République Togolaise<br />
+              <small style="color:var(--text-light);">Bureaux régionaux : Kara &amp; Sara (P/Kozah)</small></p>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="icon"><i class="fas fa-phone-alt"></i></div>
+            <div>
+              <h4 data-i18n="contact.phone.title">Téléphone / Mobile Money</h4>
+              <p>+228 90 10 96 23<br />
+              <small style="color:var(--text-light);" data-i18n="contact.phone.sub">T-Money disponible</small></p>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="icon"><i class="fas fa-envelope"></i></div>
+            <div>
+              <h4 data-i18n="contact.email.title">Email</h4>
+              <p><a href="mailto:contact@actionpopulationplus.org" style="color:var(--primary);">contact@actionpopulationplus.org</a></p>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="icon"><i class="fas fa-id-card"></i></div>
+            <div>
+              <h4 data-i18n="contact.official.title">Reconnaissance Officielle</h4>
+              <p>Récépissé N° 0395/MISD-SG-DAPSC-DSC<br />
+              Attestation N° 460/MCDAT (2008)</p>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="icon"><i class="fas fa-clock"></i></div>
+            <div>
+              <h4 data-i18n="contact.availability.title">Disponibilité</h4>
+              <p data-i18n="contact.availability.text">Lundi – Vendredi : 8h00 – 17h00<br />
+              <small style="color:var(--text-light);">Samedi sur rendez-vous</small></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="social-links">
+          <h4 data-i18n="contact.social">Suivez-nous</h4>
+          <div class="social-btns">
+            <a href="#" class="social-btn fb" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-btn tw" title="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-btn wa" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            <a href="#" class="social-btn yt" title="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-form fade-in-right">
+        <h3 data-i18n="contact.form.title">Envoyez-nous un message</h3>
+        <form id="contact-form" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="prenom" data-i18n="contact.form.prenom">Prénom *</label>
+              <input type="text" id="prenom" name="prenom" data-i18n-placeholder="contact.form.prenom.ph" placeholder="Votre prénom" required />
+            </div>
+            <div class="form-group">
+              <label for="nom" data-i18n="contact.form.nom">Nom *</label>
+              <input type="text" id="nom" name="nom" data-i18n-placeholder="contact.form.nom.ph" placeholder="Votre nom" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">Email *</label>
+            <input type="email" id="email" name="email" placeholder="votre@email.com" required />
+          </div>
+          <div class="form-group">
+            <label for="telephone" data-i18n="contact.form.telephone">Téléphone</label>
+            <input type="tel" id="telephone" name="telephone" placeholder="+228 XX XX XX XX" />
+          </div>
+          <div class="form-group">
+            <label for="sujet" data-i18n="contact.form.sujet">Sujet *</label>
+            <select id="sujet" name="sujet" required>
+              <option value="" data-i18n="contact.form.sujet.default">Choisissez un sujet…</option>
+              <option value="partenariat" data-i18n="contact.form.sujet.partenariat">Partenariat</option>
+              <option value="don" data-i18n="contact.form.sujet.don">Faire un don</option>
+              <option value="volontariat" data-i18n="contact.form.sujet.volontariat">Devenir bénévole</option>
+              <option value="programme" data-i18n="contact.form.sujet.programme">Informations sur nos programmes</option>
+              <option value="autre" data-i18n="contact.form.sujet.autre">Autre demande</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Message *</label>
+            <textarea id="message" name="message" data-i18n-placeholder="contact.form.message.ph" placeholder="Écrivez votre message ici…" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-blue" style="width:100%; justify-content:center;">
+            <i class="fas fa-paper-plane"></i> <span data-i18n="contact.form.submit">Envoyer le message</span>
+          </button>
+          <div class="form-success" id="form-success">
+            <i class="fas fa-check-circle"></i> <span data-i18n="contact.form.success">Votre message a bien été envoyé ! Nous vous répondrons dans les plus brefs délais.</span>
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- =============================================
+     FOOTER
+     ============================================= -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <img src="images/logo.jpeg" alt="Logo APP" />
+          <span class="name">APP</span>
+        </div>
+        <p data-i18n="footer.brand.text">
+          L'ONG Action Population Plus œuvre depuis 2003 pour le développement harmonieux des populations togolaises à travers la santé, l'éducation, l'autonomisation des femmes et le soutien aux groupes vulnérables.
+        </p>
+        <p style="font-style:italic; color:var(--gold); margin-top:10px; font-size:0.9rem; text-transform:uppercase; letter-spacing:0.5px;" data-i18n="footer.brand.tagline">« Faire plus pour les problèmes de population »</p>
+        <div class="footer-recognition">
+          Récépissé N° 0395/MISD-SG-DAPSC-DSC · 16 avril 2003<br />
+          Attestation de qualité N° 460/MCDAT · 28 août 2008<br />
+          Régi par le Décret N° 92-130/PMRT du 27 mai 1992
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4 data-i18n="footer.nav.title">Navigation</h4>
+        <ul class="footer-links">
+          <li><a href="#about"><i class="fas fa-chevron-right"></i> <span data-i18n="nav.about">À Propos</span></a></li>
+          <li><a href="#programmes"><i class="fas fa-chevron-right"></i> <span data-i18n="footer.nav.programmes">Nos Programmes</span></a></li>
+          <li><a href="#actualites"><i class="fas fa-chevron-right"></i> <span data-i18n="nav.actualites">Actualités</span></a></li>
+          <li><a href="#galerie"><i class="fas fa-chevron-right"></i> <span data-i18n="footer.nav.galerie">Galerie Photos</span></a></li>
+          <li><a href="#partenaires"><i class="fas fa-chevron-right"></i> <span data-i18n="nav.partenaires">Partenaires</span></a></li>
+          <li><a href="#dons"><i class="fas fa-chevron-right"></i> <span data-i18n="nav.donate">Faire un Don</span></a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 data-i18n="footer.prog.title">Nos Programmes</h4>
+        <ul class="footer-links">
+          <li><a href="#programmes"><i class="fas fa-chevron-right"></i> <span data-i18n="prog.sante.title">Santé Communautaire</span></a></li>
+          <li><a href="#programmes"><i class="fas fa-chevron-right"></i> <span data-i18n="prog.enfants.title">Enfants &amp; Orphelins</span></a></li>
+          <li><a href="#programmes"><i class="fas fa-chevron-right"></i> <span data-i18n="galerie.filter.sensib">Sensibilisation</span></a></li>
+          <li><a href="#programmes"><i class="fas fa-chevron-right"></i> <span data-i18n="prog.femmes.title">Femmes &amp; Veuves</span></a></li>
+          <li><a href="#programmes"><i class="fas fa-chevron-right"></i> <span data-i18n="footer.prog.formation">Formation AFEDI</span></a></li>
+          <li><a href="#programmes"><i class="fas fa-chevron-right"></i> <span data-i18n="footer.prog.agri">Agriculture CODISA</span></a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 data-i18n="nav.contact">Contact</h4>
+        <div class="footer-contact-item">
+          <span class="ic"><i class="fas fa-map-marker-alt"></i></span>
+          <span data-i18n="footer.contact.address">Lomé, République Togolaise<br />Bureaux à Kara &amp; Sara</span>
+        </div>
+        <div class="footer-contact-item">
+          <span class="ic"><i class="fas fa-phone"></i></span>
+          <span>+228 90 10 96 23</span>
+        </div>
+        <div class="footer-contact-item">
+          <span class="ic"><i class="fas fa-envelope"></i></span>
+          <a href="mailto:contact@actionpopulationplus.org" style="color:rgba(255,255,255,0.65);">contact@actionpopulationplus.org</a>
+        </div>
+        <div style="margin-top:20px; display:flex; gap:10px;">
+          <a href="#" class="social-btn fb" style="width:36px;height:36px;font-size:14px;"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-btn wa" style="width:36px;height:36px;font-size:14px;"><i class="fab fa-whatsapp"></i></a>
+          <a href="#" class="social-btn yt" style="width:36px;height:36px;font-size:14px;"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="footer-bottom">
+      <p data-i18n="footer.bottom1">© 2025 Action Population Plus (APP) – Tous droits réservés.</p>
+      <p data-i18n="footer.bottom2">Conçu avec <span style="color:var(--gold);">♥</span> pour le développement du Togo</p>
+    </div>
+  </div>
+</footer>
+
+<!-- Lightbox -->
+<div id="lightbox">
+  <span id="lightbox-close">&times;</span>
+  <button id="lightbox-prev"><i class="fas fa-chevron-left"></i></button>
+  <img id="lightbox-img" src="" alt="" />
+  <button id="lightbox-next"><i class="fas fa-chevron-right"></i></button>
+</div>
+
+<!-- Back to Top -->
+<div id="back-to-top" title="Retour en haut">
+  <i class="fas fa-arrow-up"></i>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
