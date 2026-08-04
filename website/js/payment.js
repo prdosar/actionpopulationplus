@@ -161,76 +161,40 @@ document.addEventListener("DOMContentLoaded", () => {
         }
 
         formError.textContent = "";
-        showView(viewLoading);
+        
+        // Show a brief indication before redirecting
+        btnSubmit.textContent = "Redirection en cours...";
+        btnSubmit.disabled = true;
         
         const identifier = "APP_DON_" + Date.now() + "_" + Math.floor(Math.random()*1000);
+        const description = "Donation APP";
+        const returnUrl = window.location.href; // Return to current page after payment
         
-        try {
-            const response = await fetch('https://paygateglobal.com/api/v1/pay', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({
-                    auth_token: API_KEY,
-                    phone_number: phone,
-                    amount: amount,
-                    description: "Donation APP",
-                    identifier: identifier,
-                    network: network
-                })
-            });
+        // Construct the URL for Method 2
+        const paymentUrl = new URL('https://paygateglobal.com/v1/page');
+        paymentUrl.searchParams.append('token', API_KEY);
+        paymentUrl.searchParams.append('amount', amount);
+        paymentUrl.searchParams.append('description', description);
+        paymentUrl.searchParams.append('identifier', identifier);
+        paymentUrl.searchParams.append('url', returnUrl);
+        
+        // Optional parameters mentioned in the doc
+        if (phone) {
+            paymentUrl.searchParams.append('phone', phone);
             
-            const data = await response.json();
-            
-            if (data.status == 0) {
-                // Initiated successfully, start polling
-                pollTransactionStatus(data.tx_reference);
-            } else {
-                showError("Erreur d'initiation. Code: " + data.status);
+            // Auto-detect network based on prefix
+            const prefix = phone.substring(0, 2);
+            const togocelPrefixes = ['90', '91', '92', '93', '94', '70', '71', '72', '73'];
+            let detectedNetwork = 'MOOV';
+            if (togocelPrefixes.includes(prefix)) {
+                detectedNetwork = 'TOGOCEL';
             }
-        } catch (err) {
-            showError("Erreur réseau lors de l'initiation du paiement.");
+            paymentUrl.searchParams.append('network', detectedNetwork);
         }
+        
+        // Redirect the browser to the payment page (avoids CORS entirely)
+        window.location.href = paymentUrl.toString();
     });
-
-    function pollTransactionStatus(tx_reference) {
-        let attempts = 0;
-        checkInterval = setInterval(async () => {
-            attempts++;
-            if (attempts > 30) { // 30 * 4s = 120s timeout
-                clearInterval(checkInterval);
-                showError("Le paiement a expiré ou n'a pas été validé à temps.");
-                return;
-            }
-
-            try {
-                const response = await fetch('https://paygateglobal.com/api/v1/status', {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({
-                        auth_token: API_KEY,
-                        tx_reference: tx_reference
-                    })
-                });
-                
-                const data = await response.json();
-                
-                if (data.status == 0) {
-                    clearInterval(checkInterval);
-                    showView(viewSuccess);
-                } else if (data.status == 4) {
-                    clearInterval(checkInterval);
-                    showError("Le paiement a expiré.");
-                } else if (data.status == 6) {
-                    clearInterval(checkInterval);
-                    showError("Le paiement a été annulé.");
-                }
-                // If status == 2 (En cours), just continue polling
-                
-            } catch(e) {
-                // Ignore network errors on polling, will try next interval
-            }
-        }, 4000);
-    }
     
     function showError(msg) {
         document.getElementById('payErrorText').textContent = msg;
