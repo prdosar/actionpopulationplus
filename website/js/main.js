@@ -6,7 +6,7 @@
 const t = {
   fr: {
     'nav.about':'À Propos','nav.programmes':'Programmes','nav.actualites':'Actualités',
-    'nav.galerie':'Galerie','nav.partenaires':'Partenaires','nav.contact':'Contact',
+    'nav.galerie':'Activités','nav.partenaires':'Partenaires','nav.contact':'Contact',
     'nav.donate':'Faire un Don',
     'hero.badge':'ONG reconnue • Togo depuis 2003',
     'hero.subtitle':'Contribuer au développement harmonieux et intégral<br />des populations urbaines et rurales du Togo.',
@@ -108,7 +108,7 @@ const t = {
     'contact.form.success':'Votre message a bien été envoyé ! Nous vous répondrons dans les plus brefs délais.',
     'footer.brand.text':'L\'ONG Action Population Plus œuvre depuis 2003 pour le développement harmonieux des populations togolaises à travers la santé, l\'éducation, l\'autonomisation des femmes et le soutien aux groupes vulnérables.',
     'footer.brand.tagline':'« Faire plus pour les problèmes de population »',
-    'footer.nav.title':'Navigation','footer.nav.programmes':'Nos Programmes','footer.nav.galerie':'Galerie Photos',
+    'footer.nav.title':'Navigation','footer.nav.programmes':'Nos Programmes','footer.nav.galerie':'Activités',
     'footer.prog.title':'Nos Programmes','footer.prog.formation':'Formation AFEDI','footer.prog.agri':'Agriculture CODISA',
     'footer.contact.address':'Lomé, République Togolaise<br />Bureaux à Kara &amp; Sara',
     'footer.bottom1':'© 2025 Action Population Plus (APP) – Tous droits réservés.',
