@@ -43,7 +43,54 @@ const t = {
     'impact.label3':'Programmes actifs couvrant santé, éducation et développement',
     'impact.label4':'Régions d\'intervention : Lomé, Kara et Sara (P/Kozah)',
     'actu.label':'Nos Activités','actu.h2':'Actualités &amp; <span>Événements</span>',
-    'actu.desc':'Découvrez nos dernières activités et événements réalisés sur le terrain au Togo.',
+    'actu.desc':'Découvrez nos dernières activités et événements réalisés sur le terrain au Togo et à l\'international.',
+    'actu.mission.badge':'Mission Internationale • Juillet',
+    'actu.mission.title':'Mission en Europe – Développement &amp; Partenariats Stratégiques',
+    'actu.mission.desc':'Cette mission a permis de réaliser plusieurs rencontres stratégiques en Belgique, au Luxembourg et en France, dans le but de développer des partenariats, de partager des expériences et d\'explorer des initiatives innovantes adaptées au contexte togolais.',
+    'actu.mission.h1.title':'Centre d\'Entreprise &amp; Éducation',
+    'actu.mission.h1.sub':'Liège (9 juillet)',
+    'actu.mission.h2.title':'Échanges &amp; Coopération',
+    'actu.mission.h2.sub':'Luxembourg (10 juillet)',
+    'actu.mission.h3.title':'Cercle des Armées &amp; ONG MIM',
+    'actu.mission.h3.sub':'Paris (13 juillet)',
+    'actu.mission.btn_read':'Lire le compte-rendu complet',
+    'actu.mission.btn_partners':'Voir les partenaires',
+    'actu.mission.partner_tag':'Coopération Internationale',
+    'actu.mission.partner_sub':'Partenariat &amp; Résilience',
+    'modal.mission.badge':'Compte-rendu officiel • Mission Internationale',
+    'modal.mission.title':'Mission en Europe – Juillet',
+    'modal.mission.intro':'Cette mission a permis de réaliser plusieurs rencontres stratégiques en Belgique, au Luxembourg et en France, dans le but de développer des partenariats, de partager des expériences et d\'explorer des initiatives pouvant être adaptées au contexte togolais.',
+    'modal.mission.stepA.title':'Rencontre avec le responsable du Centre d\'Entreprise et Mme Marina',
+    'modal.mission.stepA.desc1':'Une séance de travail s\'est tenue à Liège avec le responsable du Centre d\'Entreprise ainsi que Mme Marina, une responsable d\'ONG déjà installée à Kpalimé dans le domaine de l\'éducation.',
+    'modal.mission.stepA.obj_title':'<i class="fas fa-bullseye"></i> Objectif de la rencontre',
+    'modal.mission.stepA.obj_desc':'L\'objectif principal était de s\'inspirer du modèle belge afin de créer au Togo un centre de rencontres réunissant régulièrement les entreprises publiques, les entreprises privées et les organisations de la société civile.',
+    'modal.mission.stepA.frame_title':'Ce cadre permettra notamment de :',
+    'modal.mission.stepA.l1':'<i class="fas fa-check-circle"></i> Favoriser les échanges entre les différents acteurs ;',
+    'modal.mission.stepA.l2':'<i class="fas fa-check-circle"></i> Partager les projets en cours ;',
+    'modal.mission.stepA.l3':'<i class="fas fa-check-circle"></i> Développer des partenariats ;',
+    'modal.mission.stepA.l4':'<i class="fas fa-check-circle"></i> Renforcer le réseau professionnel ;',
+    'modal.mission.stepA.l5':'<i class="fas fa-check-circle"></i> Encourager une collaboration durable autour des enjeux de développement.',
+    'modal.mission.stepB.title':'Rencontre avec M. Paul Weiss',
+    'modal.mission.stepB.desc':'Une rencontre d\'échanges s\'est déroulée au Luxembourg avec M. Paul Weiss, un Luxembourgeois connaissant déjà le Togo.',
+    'modal.mission.stepB.quote':'Les discussions se sont déroulées dans un climat chaleureux et constructif, marqué par une forte appréciation du Togo et par l\'exploration de perspectives prometteuses de collaboration future.',
+    'modal.mission.stepC.title1':'Rencontre au Cercle National des Armées',
+    'modal.mission.stepC.desc1':'Une importante séance de travail s\'est tenue au Cercle National des Armées à Paris.',
+    'modal.mission.stepC.desc2':'À l\'issue des échanges, un moment de remise de cadeaux souvenirs est venu symboliser la qualité des relations établies et la volonté commune de renforcer la coopération.',
+    'modal.mission.stepC.mim_title':'Séance de travail avec l\'ONG Médiateurs Internationaux Multilingues (MIM)',
+    'modal.mission.stepC.mim_sub':'Avec Mme Imen Chaanbi, Secrétaire Générale de l\'ONG MIM',
+    'modal.mission.stepC.mim_pres_title':'<i class="fas fa-heartbeat"></i> Domaines d\'expertise MIM',
+    'modal.mission.stepC.mim_d1':'Santé mentale',
+    'modal.mission.stepC.mim_d2':'Accompagnement psychologique',
+    'modal.mission.stepC.mim_d3':'Soutien des adolescents',
+    'modal.mission.stepC.mim_d4':'Assistance aux populations en période de crise',
+    'modal.mission.stepC.mim_ctx_title':'<i class="fas fa-shield-virus"></i> Contextes d\'action',
+    'modal.mission.stepC.mim_c1':'Zones de guerre &amp; camps de réfugiés',
+    'modal.mission.stepC.mim_c2':'Situations d\'attaques terroristes',
+    'modal.mission.stepC.mim_c3':'Catastrophes naturelles',
+    'modal.mission.stepC.mim_c4':'Formations militaires, écoles de guerre &amp; ministères',
+    'modal.mission.stepC.conclusion':'<i class="fas fa-sparkles"></i> Cette rencontre ouvre des perspectives majeures de coopération autour des questions de médiation, de résilience et d\'accompagnement psychosocial au Togo.',
+    'modal.mission.btn_collab':'Initier un partenariat',
+    'modal.mission.btn_close':'Fermer',
     'actu.event1.category':'Événement Majeur','actu.event1.title':'Journée Internationale de la Veuve – Édition 2025 à Kara',
     'actu.event1.text':'L\'ONG APP a organisé la célébration de la Journée Internationale de la Veuve à Kara. Cet événement a rassemblé des femmes veuves, des responsables communautaires et des partenaires pour un temps fort de solidarité, de plaidoyer et de partage d\'un repas communautaire.',
     'actu.see_photos':'Voir les photos',
@@ -72,6 +119,8 @@ const t = {
     'partenaires.avi.text':'Partenaire clé de l\'APP dans le soutien aux orphelins, gérant 4 orphelinats et un centre de santé pour les enfants vulnérables au Togo.',
     'partenaires.kondjigan.text':'Partenaire santé basée à Djidjolé, travaillant avec l\'APP sur des projets de santé communautaire et d\'accès aux soins pour les populations défavorisées.',
     'partenaires.moov.text':'Sponsor officiel lors des événements communautaires de l\'APP, contribuant à la visibilité et au rayonnement des actions de l\'organisation sur le terrain.',
+    'partenaires.kiss.text':'Entreprise engagée aux côtés de l\'APP, soutenant ses actions sociales et contribuant à l\'amélioration des conditions de vie des communautés vulnérables.',
+    'partenaires.mim.text':'Réseau de médiateurs internationaux facilitant le dialogue interculturel et accompagnant l\'APP dans ses projets de cohésion sociale.',
     'partenaires.become.title':'Devenez Partenaire de l\'APP',
     'partenaires.become.text':'Vous partagez notre vision d\'un Togo solidaire et développé ? Rejoignez notre réseau de partenaires et contribuez à des actions concrètes sur le terrain.',
     'partenaires.become.btn':'Nous contacter',
@@ -153,7 +202,54 @@ const t = {
     'impact.label3':'Active programmes covering health, education and development',
     'impact.label4':'Regions of operation: Lomé, Kara and Sara (P/Kozah)',
     'actu.label':'Our Activities','actu.h2':'News &amp; <span>Events</span>',
-    'actu.desc':'Discover our latest activities and events carried out in the field in Togo.',
+    'actu.desc':'Discover our latest activities and events carried out in the field in Togo and internationally.',
+    'actu.mission.badge':'International Mission • July',
+    'actu.mission.title':'Mission in Europe – Development &amp; Strategic Partnerships',
+    'actu.mission.desc':'This mission enabled several strategic meetings in Belgium, Luxembourg and France, aiming to develop partnerships, share expertise and explore innovative initiatives tailored to Togo.',
+    'actu.mission.h1.title':'Business Center &amp; Education',
+    'actu.mission.h1.sub':'Liège (July 9)',
+    'actu.mission.h2.title':'Exchanges &amp; Cooperation',
+    'actu.mission.h2.sub':'Luxembourg (July 10)',
+    'actu.mission.h3.title':'Armed Forces Club &amp; MIM NGO',
+    'actu.mission.h3.sub':'Paris (July 13)',
+    'actu.mission.btn_read':'Read the full report',
+    'actu.mission.btn_partners':'View partners',
+    'actu.mission.partner_tag':'International Cooperation',
+    'actu.mission.partner_sub':'Partnership &amp; Resilience',
+    'modal.mission.badge':'Official Report • International Mission',
+    'modal.mission.title':'Mission in Europe – July',
+    'modal.mission.intro':'This mission enabled several strategic meetings in Belgium, Luxembourg and France to build partnerships, share experiences and explore initiatives that can be adapted to Togo.',
+    'modal.mission.stepA.title':'Meeting with the Head of the Business Centre & Mrs. Marina',
+    'modal.mission.stepA.desc1':'A working session was held in Liège with the head of the Business Centre and Mrs. Marina, head of an NGO already active in Kpalimé in education.',
+    'modal.mission.stepA.obj_title':'<i class="fas fa-bullseye"></i> Purpose of the Meeting',
+    'modal.mission.stepA.obj_desc':'The main objective was to draw inspiration from the Belgian model to create a meeting hub in Togo bringing together public enterprises, private companies and civil society.',
+    'modal.mission.stepA.frame_title':'This framework will specifically help to:',
+    'modal.mission.stepA.l1':'<i class="fas fa-check-circle"></i> Foster exchanges between diverse stakeholders;',
+    'modal.mission.stepA.l2':'<i class="fas fa-check-circle"></i> Share ongoing projects;',
+    'modal.mission.stepA.l3':'<i class="fas fa-check-circle"></i> Develop partnerships;',
+    'modal.mission.stepA.l4':'<i class="fas fa-check-circle"></i> Strengthen the professional network;',
+    'modal.mission.stepA.l5':'<i class="fas fa-check-circle"></i> Encourage lasting collaboration on development challenges.',
+    'modal.mission.stepB.title':'Meeting with Mr. Paul Weiss',
+    'modal.mission.stepB.desc':'An exchange session took place in Luxembourg with Mr. Paul Weiss, a Luxembourger already familiar with Togo.',
+    'modal.mission.stepB.quote':'Discussions took place in a warm and constructive atmosphere, marked by a strong appreciation for Togo and promising future collaboration prospects.',
+    'modal.mission.stepC.title1':'Meeting at Cercle National des Armées',
+    'modal.mission.stepC.desc1':'An important working session was held at the Cercle National des Armées in Paris.',
+    'modal.mission.stepC.desc2':'Following discussions, gifts were exchanged to symbolize established relationships and the shared commitment to strengthening cooperation.',
+    'modal.mission.stepC.mim_title':'Working session with Multilingual International Mediators NGO (MIM)',
+    'modal.mission.stepC.mim_sub':'With Mrs. Imen Chaanbi, General Secretary of MIM NGO',
+    'modal.mission.stepC.mim_pres_title':'<i class="fas fa-heartbeat"></i> MIM Areas of Expertise',
+    'modal.mission.stepC.mim_d1':'Mental health',
+    'modal.mission.stepC.mim_d2':'Psychological support',
+    'modal.mission.stepC.mim_d3':'Adolescent support',
+    'modal.mission.stepC.mim_d4':'Assistance to populations during crises',
+    'modal.mission.stepC.mim_ctx_title':'<i class="fas fa-shield-virus"></i> Operating Contexts',
+    'modal.mission.stepC.mim_c1':'War zones &amp; refugee camps',
+    'modal.mission.stepC.mim_c2':'Terrorist attack situations',
+    'modal.mission.stepC.mim_c3':'Natural disasters',
+    'modal.mission.stepC.mim_c4':'Military academies, war colleges &amp; ministries',
+    'modal.mission.stepC.conclusion':'<i class="fas fa-sparkles"></i> This meeting opens major cooperation opportunities in mediation, resilience, and psychosocial support in Togo.',
+    'modal.mission.btn_collab':'Initiate a partnership',
+    'modal.mission.btn_close':'Close',
     'actu.event1.category':'Major Event','actu.event1.title':'International Widow\'s Day – 2025 Edition in Kara',
     'actu.event1.text':'APP NGO organised the celebration of International Widow\'s Day in Kara. This event brought together widowed women, community leaders and partners for a moment of solidarity, advocacy and sharing a community meal.',
     'actu.see_photos':'See photos',
@@ -182,6 +278,8 @@ const t = {
     'partenaires.avi.text':'Key APP partner in supporting orphans, managing 4 orphanages and a health centre for vulnerable children in Togo.',
     'partenaires.kondjigan.text':'Health partner based in Djidjolé, working with APP on community health projects and access to care for disadvantaged populations.',
     'partenaires.moov.text':'Official sponsor at APP community events, contributing to the visibility and reach of the organisation\'s actions in the field.',
+    'partenaires.kiss.text':'A committed company standing alongside APP, supporting its social initiatives and helping improve the living conditions of vulnerable communities.',
+    'partenaires.mim.text':'A network of international mediators fostering intercultural dialogue and supporting APP in its social cohesion projects.',
     'partenaires.become.title':'Become an APP Partner',
     'partenaires.become.text':'Do you share our vision of a united and developed Togo? Join our partner network and contribute to concrete actions in the field.',
     'partenaires.become.btn':'Contact us',
@@ -263,7 +361,54 @@ const t = {
     'impact.label3':'Aktive Programme für Gesundheit, Bildung und Entwicklung',
     'impact.label4':'Interventionsregionen: Lomé, Kara und Sara (P/Kozah)',
     'actu.label':'Unsere Aktivitäten','actu.h2':'Aktuelles &amp; <span>Veranstaltungen</span>',
-    'actu.desc':'Entdecken Sie unsere neuesten Aktivitäten und Veranstaltungen im Togo.',
+    'actu.desc':'Entdecken Sie unsere neuesten Aktivitäten und Veranstaltungen in Togo und international.',
+    'actu.mission.badge':'Internationale Mission • Juli',
+    'actu.mission.title':'Mission in Europa – Entwicklung &amp; Strategische Partnerschaften',
+    'actu.mission.desc':'Diese Mission ermöglichte wichtige strategische Treffen in Belgien, Luxemburg und Frankreich zur Förderung von Partnerschaften, Erfahrungsaustausch und innovativen Initiativen für Togo.',
+    'actu.mission.h1.title':'Unternehmenszentrum &amp; Bildung',
+    'actu.mission.h1.sub':'Lüttich (9. Juli)',
+    'actu.mission.h2.title':'Austausch &amp; Kooperation',
+    'actu.mission.h2.sub':'Luxemburg (10. Juli)',
+    'actu.mission.h3.title':'Militäroffiziersclub &amp; NGO MIM',
+    'actu.mission.h3.sub':'Paris (13. Juli)',
+    'actu.mission.btn_read':'Vollständigen Bericht lesen',
+    'actu.mission.btn_partners':'Partner ansehen',
+    'actu.mission.partner_tag':'Internationale Zusammenarbeit',
+    'actu.mission.partner_sub':'Partnerschaft &amp; Resilienz',
+    'modal.mission.badge':'Offizieller Bericht • Internationale Mission',
+    'modal.mission.title':'Mission in Europa – Juli',
+    'modal.mission.intro':'Diese Mission ermöglichte strategische Treffen in Belgien, Luxemburg und Frankreich, um Partnerschaften aufzubauen, Erfahrungen auszutauschen und für Togo geeignete Initiativen zu erkunden.',
+    'modal.mission.stepA.title':'Treffen mit dem Leiter des Unternehmenszentrums & Frau Marina',
+    'modal.mission.stepA.desc1':'Eine Arbeitssitzung fand in Lüttich mit dem Leiter des Unternehmenszentrums und Frau Marina statt, Leiterin einer bereits in Kpalimé im Bildungsbereich tätigen NGO.',
+    'modal.mission.stepA.obj_title':'<i class="fas fa-bullseye"></i> Ziel des Treffens',
+    'modal.mission.stepA.obj_desc':'Hauptziel war es, sich vom belgischen Modell inspirieren zu lassen, um in Togo ein Begegnungszentrum für öffentliche und private Unternehmen sowie die Zivilgesellschaft zu schaffen.',
+    'modal.mission.stepA.frame_title':'Dieser Rahmen soll insbesondere:',
+    'modal.mission.stepA.l1':'<i class="fas fa-check-circle"></i> Den Austausch zwischen den Akteuren fördern;',
+    'modal.mission.stepA.l2':'<i class="fas fa-check-circle"></i> Laufende Projekte teilen;',
+    'modal.mission.stepA.l3':'<i class="fas fa-check-circle"></i> Partnerschaften entwickeln;',
+    'modal.mission.stepA.l4':'<i class="fas fa-check-circle"></i> Das professionelle Netzwerk stärken;',
+    'modal.mission.stepA.l5':'<i class="fas fa-check-circle"></i> Eine nachhaltige Zusammenarbeit bei Entwicklungsfragen fördern.',
+    'modal.mission.stepB.title':'Treffen mit Herrn Paul Weiss',
+    'modal.mission.stepB.desc':'Ein Austausch fand in Luxemburg mit Herrn Paul Weiss statt, einem Luxemburger mit Togo-Erfahrung.',
+    'modal.mission.stepB.quote':'Die Gespräche verliefen in einer herzlichen und konstruktiven Atmosphäre, geprägt von großer Wertschätzung für Togo und vielversprechenden Kooperationsperspektiven.',
+    'modal.mission.stepC.title1':'Treffen im Cercle National des Armées',
+    'modal.mission.stepC.desc1':'Eine wichtige Arbeitssitzung fand im Cercle National des Armées in Paris statt.',
+    'modal.mission.stepC.desc2':'Zum Abschluss wurden Gastgeschenke überreicht, die die Qualität der Beziehungen und den gemeinsamen Kooperationswillen symbolisieren.',
+    'modal.mission.stepC.mim_title':'Arbeitssitzung mit der NGO Médiateurs Internationaux Multilingues (MIM)',
+    'modal.mission.stepC.mim_sub':'Mit Frau Imen Chaanbi, Generalsekretärin der NGO MIM',
+    'modal.mission.stepC.mim_pres_title':'<i class="fas fa-heartbeat"></i> MIM Fachbereiche',
+    'modal.mission.stepC.mim_d1':'Psychische Gesundheit',
+    'modal.mission.stepC.mim_d2':'Psychologische Begleitung',
+    'modal.mission.stepC.mim_d3':'Unterstützung für Jugendliche',
+    'modal.mission.stepC.mim_d4':'Hilfe für Bevölkerungsgruppen in Krisenzeiten',
+    'modal.mission.stepC.mim_ctx_title':'<i class="fas fa-shield-virus"></i> Einsatzkontexte',
+    'modal.mission.stepC.mim_c1':'Kriegsgebiete &amp; Flüchtlingslager',
+    'modal.mission.stepC.mim_c2':'Terroranschlagssituationen',
+    'modal.mission.stepC.mim_c3':'Naturkatastrophen',
+    'modal.mission.stepC.mim_c4':'Militärakademien, Kriegsschulen &amp; Ministerien',
+    'modal.mission.stepC.conclusion':'<i class="fas fa-sparkles"></i> Dieses Treffen eröffnet wichtige Kooperationsperspektiven in Mediation, Resilienz und psychosozialer Betreuung in Togo.',
+    'modal.mission.btn_collab':'Partnerschaft starten',
+    'modal.mission.btn_close':'Schließen',
     'actu.event1.category':'Großveranstaltung','actu.event1.title':'Internationaler Tag der Witwe – Ausgabe 2025 in Kara',
     'actu.event1.text':'APP NGO organisierte die Feier des Internationalen Tages der Witwe in Kara. Diese Veranstaltung brachte Witwen, Gemeinschaftsführer und Partner für einen Moment der Solidarität, des Engagements und des Teilens einer Gemeinschaftsmahlzeit zusammen.',
     'actu.see_photos':'Fotos ansehen',
@@ -292,6 +437,8 @@ const t = {
     'partenaires.avi.text':'Wichtiger APP-Partner bei der Unterstützung von Waisen, der 4 Waisenhäuser und ein Gesundheitszentrum für schutzbedürftige Kinder in Togo verwaltet.',
     'partenaires.kondjigan.text':'Gesundheitspartner in Djidjolé, der mit APP an Projekten zur Gemeinschaftsgesundheit und zum Zugang zu medizinischer Versorgung für benachteiligte Bevölkerungsgruppen arbeitet.',
     'partenaires.moov.text':'Offizieller Sponsor bei gemeinschaftlichen APP-Veranstaltungen, der zur Sichtbarkeit und Reichweite der Aktionen der Organisation vor Ort beiträgt.',
+    'partenaires.kiss.text':'Ein engagiertes Unternehmen an der Seite der APP, das ihre sozialen Maßnahmen unterstützt und zur Verbesserung der Lebensbedingungen schutzbedürftiger Gemeinschaften beiträgt.',
+    'partenaires.mim.text':'Ein Netzwerk internationaler Mediatoren, das den interkulturellen Dialog fördert und die APP bei ihren Projekten zum sozialen Zusammenhalt begleitet.',
     'partenaires.become.title':'Werden Sie APP-Partner',
     'partenaires.become.text':'Teilen Sie unsere Vision eines solidarischen und entwickelten Togos? Treten Sie unserem Partnernetzwerk bei und tragen Sie zu konkreten Maßnahmen vor Ort bei.',
     'partenaires.become.btn':'Kontaktieren Sie uns',
@@ -593,4 +740,56 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  /* ---- Mission Modal Logic ---- */
+  const missionModal = document.getElementById('mission-modal');
+  const openMissionBtn = document.getElementById('open-mission-modal');
+  const closeMissionBtn = document.getElementById('close-mission-modal');
+  const footerCloseBtn = document.getElementById('modal-footer-close');
+  const modalContactBtn = document.querySelector('.modal-contact-btn');
+
+  function openMissionModal() {
+    if (!missionModal) return;
+    missionModal.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeMissionModal() {
+    if (!missionModal) return;
+    missionModal.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+
+  if (openMissionBtn) {
+    openMissionBtn.addEventListener('click', openMissionModal);
+  }
+
+  if (closeMissionBtn) {
+    closeMissionBtn.addEventListener('click', closeMissionModal);
+  }
+
+  if (footerCloseBtn) {
+    footerCloseBtn.addEventListener('click', closeMissionModal);
+  }
+
+  if (modalContactBtn) {
+    modalContactBtn.addEventListener('click', () => {
+      closeMissionModal();
+    });
+  }
+
+  if (missionModal) {
+    missionModal.addEventListener('click', (e) => {
+      if (e.target.classList.contains('modal-backdrop')) {
+        closeMissionModal();
+      }
+    });
+  }
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && missionModal && missionModal.classList.contains('open')) {
+      closeMissionModal();
+    }
+  });
+
 });
+
