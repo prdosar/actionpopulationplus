@@ -68,7 +68,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const formError = document.getElementById('payFormError');
     
     // Config API
-    const API_KEY = '39668f1d-0605-4716-9021-6db7c0a43db2';
+    const API_KEY = '05393b5a-28cf-429c-b18c-70f5a177d0e0';
     
     let checkInterval = null;
 
