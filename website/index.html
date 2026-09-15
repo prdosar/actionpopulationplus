@@ -48,75 +48,96 @@
 </nav>
 
 <!-- =============================================
-     HERO SECTION
+     HERO SECTION (Full-width Carrousel Background)
      ============================================= -->
-<section id="accueil" style="min-height:100vh;">
-  <div id="hero">
-    <div class="hero-bg-shapes">
-      <div class="hero-shape hero-shape-1"></div>
-      <div class="hero-shape hero-shape-2"></div>
-      <div class="hero-shape hero-shape-3"></div>
-      <div class="hero-particles"></div>
-    </div>
+<section id="accueil" class="hero-full-section">
+  
+  <!-- Carrousel d'images en arrière-plan -->
+  <div class="hero-bg-carousel">
+    <div class="hero-slide active" style="background-image: url('images/veuve_panel3.jpeg');"></div>
+    <div class="hero-slide" style="background-image: url('images/formation2.jpeg');"></div>
+    <div class="hero-slide" style="background-image: url('images/campagne1.jpeg');"></div>
+    <div class="hero-slide" style="background-image: url('images/sante1.jpeg');"></div>
+  </div>
 
-    <div class="hero-content">
-      <div class="hero-text">
-        <div class="badge">
-          <span class="dot"></span>
-          <span data-i18n="hero.badge">ONG reconnue • Togo depuis 2003</span>
-        </div>
-        <h1>
-          <span class="gold">Action</span><br />
-          Population<br />
-          Plus
-        </h1>
-        <p class="subtitle" data-i18n="hero.subtitle">
-          Contribuer au développement harmonieux et intégral<br />
-          des populations urbaines et rurales du Togo.
-        </p>
-        <blockquote class="hero-quote">
-          <p data-i18n="hero.quote">« Nous devons apprendre à vivre ensemble comme des frères, sinon nous allons mourir tous ensemble comme des idiots. »</p>
-          <cite>— Martin Luther King Jr.</cite>
-        </blockquote>
-        <div class="hero-buttons">
-          <a href="#about" class="btn btn-primary">
-            <i class="fas fa-info-circle"></i> <span data-i18n="hero.discover">Découvrir l'APP</span>
-          </a>
-          <a href="#dons" class="btn btn-outline">
-            <i class="fas fa-hand-holding-heart"></i> <span data-i18n="nav.donate">Faire un Don</span>
-          </a>
-        </div>
+  <!-- Overlay sombre pour la lisibilité -->
+  <div class="hero-overlay"></div>
+
+  <!-- Contenu centré -->
+  <div class="hero-content-full">
+    <div class="container">
+      <h1 class="hero-full-title">
+        Inspiration, Solidarité<br>
+        et Développement
+      </h1>
+      
+      <p class="hero-full-subtitle">
+        L'ONG Action Population Plus œuvre depuis 2003 pour le développement harmonieux des populations togolaises à travers la santé, l'éducation, et l'autonomisation des femmes et des jeunes.
+      </p>
+
+      <div class="hero-full-buttons">
+        <a href="#dons" class="btn-hero-cta primary">Faire un Don</a>
+        <a href="#about" class="btn-hero-cta outline">En savoir plus</a>
       </div>
-
-      <div class="hero-visual">
-        <div class="hero-logo-card">
-          <img src="images/logo.jpeg" alt="Logo Action Population Plus" />
-          <div class="org-name">ACTION POPULATION PLUS</div>
-          <div class="org-tagline" data-i18n="hero.tagline">FAIRE PLUS POUR LES PROBLÈMES DE POPULATION</div>
-        </div>
-        <div class="hero-stats-row">
-          <div class="hero-stat">
-            <div class="num">22+</div>
-            <div class="lbl" data-i18n="hero.stat1">Années d'expérience</div>
-          </div>
-          <div class="hero-stat">
-            <div class="num">5+</div>
-            <div class="lbl" data-i18n="hero.stat2">Programmes actifs</div>
-          </div>
-          <div class="hero-stat">
-            <div class="num">3</div>
-            <div class="lbl" data-i18n="hero.stat3">Régions couvertes</div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="scroll-indicator">
-      <span data-i18n="hero.scroll">Défiler</span>
-      <div class="arrow"></div>
     </div>
   </div>
+
+  <!-- Dots de navigation -->
+  <div class="hero-dots">
+    <span class="hero-dot active" data-index="0"></span>
+    <span class="hero-dot" data-index="1"></span>
+    <span class="hero-dot" data-index="2"></span>
+    <span class="hero-dot" data-index="3"></span>
+  </div>
+
 </section>
+
+<!-- =============================================
+     SCRIPT CARROUSEL (À placer juste avant </body>)
+     ============================================= -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const slides = document.querySelectorAll('.hero-slide');
+  const dots = document.querySelectorAll('.hero-dot');
+  
+  if (slides.length === 0) return;
+  
+  let currentSlide = 0;
+  let autoPlayInterval;
+  const slideDuration = 5000; // Change toutes les 5 secondes
+
+  function goToSlide(index) {
+    slides[currentSlide].classList.remove('active');
+    if (dots[currentSlide]) dots[currentSlide].classList.remove('active');
+    
+    currentSlide = (index + slides.length) % slides.length;
+    
+    slides[currentSlide].classList.add('active');
+    if (dots[currentSlide]) dots[currentSlide].classList.add('active');
+  }
+
+  function nextSlide() {
+    goToSlide(currentSlide + 1);
+  }
+
+  function startAutoPlay() {
+    clearInterval(autoPlayInterval);
+    autoPlayInterval = setInterval(nextSlide, slideDuration);
+  }
+
+  // Clic sur les dots
+  dots.forEach(function(dot, index) {
+    dot.addEventListener('click', function() {
+      goToSlide(index);
+      clearInterval(autoPlayInterval);
+      startAutoPlay();
+    });
+  });
+
+  // Lancement automatique
+  startAutoPlay();
+});
+</script>
 
 <!-- =============================================
      À PROPOS

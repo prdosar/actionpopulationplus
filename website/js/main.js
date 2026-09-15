@@ -791,5 +791,124 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
+  // =========================================
+// HERO FULL-WIDTH CAROUSEL
+// =========================================
+document.addEventListener('DOMContentLoaded', () => {
+  const slides = document.querySelectorAll('.hero-slide');
+  const dots = document.querySelectorAll('.hero-dot');
+  const heroSection = document.querySelector('.hero-full-section');
+  
+  if (slides.length === 0) return;
+  
+  let currentSlide = 0;
+  let autoPlayInterval;
+  const slideDuration = 5000; // 5 secondes
+
+  function goToSlide(index) {
+    slides[currentSlide].classList.remove('active');
+    dots[currentSlide].classList.remove('active');
+    
+    currentSlide = (index + slides.length) % slides.length;
+    
+    slides[currentSlide].classList.add('active');
+    dots[currentSlide].classList.add('active');
+  }
+
+  function nextSlide() {
+    goToSlide(currentSlide + 1);
+  }
+
+  function startAutoPlay() {
+    autoPlayInterval = setInterval(nextSlide, slideDuration);
+  }
+
+  function stopAutoPlay() {
+    clearInterval(autoPlayInterval);
+  }
+
+  // Clic sur les dots
+  dots.forEach((dot, index) => {
+    dot.addEventListener('click', () => {
+      goToSlide(index);
+      stopAutoPlay();
+      startAutoPlay();
+    });
+  });
+
+  // Pause au survol
+  if (heroSection) {
+    heroSection.addEventListener('mouseenter', stopAutoPlay);
+    heroSection.addEventListener('mouseleave', startAutoPlay);
+  }
+
+  // Lancer le carrousel
+  startAutoPlay();
+});
+
+// =========================================
+// HERO CAROUSEL - DÉFILEMENT AUTOMATIQUE
+// =========================================
+document.addEventListener('DOMContentLoaded', () => {
+  const slides = document.querySelectorAll('.hero-slide');
+  const dots = document.querySelectorAll('.hero-dot');
+  const heroSection = document.querySelector('.hero-full-section');
+  
+  // Si aucun carrousel trouvé, on arrête
+  if (slides.length === 0) return;
+  
+  let currentSlide = 0;
+  let autoPlayInterval;
+  const slideDuration = 5000; // ⏱️ 5000ms = 5 secondes (modifiable)
+
+  // Fonction pour aller à une slide spécifique
+  function goToSlide(index) {
+    // Retirer la classe active de la slide et du dot actuels
+    slides[currentSlide].classList.remove('active');
+    if (dots[currentSlide]) dots[currentSlide].classList.remove('active');
+    
+    // Calculer le nouvel index (boucle infinie)
+    currentSlide = (index + slides.length) % slides.length;
+    
+    // Ajouter la classe active à la nouvelle slide et au nouveau dot
+    slides[currentSlide].classList.add('active');
+    if (dots[currentSlide]) dots[currentSlide].classList.add('active');
+  }
+
+  // Passer à la slide suivante
+  function nextSlide() {
+    goToSlide(currentSlide + 1);
+  }
+
+  // Démarrer le défilement automatique
+  function startAutoPlay() {
+    stopAutoPlay(); // Évite les doublons d'intervalles
+    autoPlayInterval = setInterval(nextSlide, slideDuration);
+  }
+
+  // Arrêter le défilement automatique
+  function stopAutoPlay() {
+    clearInterval(autoPlayInterval);
+  }
+
+  // Clic sur les dots pour navigation manuelle
+  dots.forEach((dot, index) => {
+    dot.addEventListener('click', () => {
+      goToSlide(index);
+      stopAutoPlay();
+      startAutoPlay(); // Redémarre le timer après clic
+    });
+  });
+
+  // Pause au survol de la souris (meilleure UX)
+  if (heroSection) {
+    heroSection.addEventListener('mouseenter', stopAutoPlay);
+    heroSection.addEventListener('mouseleave', startAutoPlay);
+  }
+
+  // 🚀 Lancer le carrousel au chargement de la page
+  startAutoPlay();
+});
+
 });
 
