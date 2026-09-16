@@ -2267,3 +2267,99 @@ footer {
   }
 }
 
+/* =========================================
+   DRAPEAUX DE LANGUE (Style professionnel)
+   ========================================= */
+.lang-switcher {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.lang-btn {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 6px;
+  padding: 6px 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lang-btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+}
+
+.lang-btn.active {
+  border-color: var(--gold, #F5A623);
+  background: rgba(245, 166, 35, 0.15);
+  box-shadow: 0 0 10px rgba(245, 166, 35, 0.3);
+}
+
+.flag-icon {
+  width: 22px;
+  height: auto;
+  border-radius: 3px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  display: block;
+}
+
+/* Ajustement pour mobile */
+@media (max-width: 768px) {
+  .lang-switcher {
+    margin-top: 10px;
+    justify-content: center;
+  }
+}
+
+/* =========================================
+   DRAPEAUX DE LANGUE (SVG Inline)
+   ========================================= */
+.lang-switcher {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.lang-btn {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 6px;
+  padding: 6px 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lang-btn:hover {
+  background: rgba(255, 255, 255, 0.25);
+  transform: translateY(-2px);
+}
+
+.lang-btn.active {
+  border-color: var(--gold, #F5A623);
+  background: rgba(245, 166, 35, 0.15);
+  box-shadow: 0 0 10px rgba(245, 166, 35, 0.3);
+}
+
+/* Style spécifique pour les drapeaux SVG */
+.flag-svg {
+  width: 24px;
+  height: auto;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  display: block;
+}
+
+/* Ajustement pour mobile */
+@media (max-width: 768px) {
+  .lang-switcher {
+    margin-top: 10px;
+    justify-content: center;
+  }
+}

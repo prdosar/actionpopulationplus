@@ -35,11 +35,39 @@
       <li><a href="#dons" class="btn-nav-don"><i class="fas fa-heart"></i> <span data-i18n="nav.donate">Faire un Don</span></a></li>
     </ul>
 
-    <div class="lang-switcher">
-      <button class="lang-btn active" data-lang="fr" title="Français">🇫🇷</button>
-      <button class="lang-btn" data-lang="en" title="English">🇬🇧</button>
-      <button class="lang-btn" data-lang="de" title="Deutsch">🇩🇪</button>
-    </div>
+<div class="lang-switcher">
+  <button class="lang-btn active" data-lang="fr" title="Français">
+    <!-- Drapeau Français (SVG) -->
+    <svg class="flag-svg" viewBox="0 0 900 600" xmlns="http://www.w3.org/2000/svg">
+      <rect width="900" height="600" fill="#ED2939"/>
+      <rect width="600" height="600" fill="#ffffff"/>
+      <rect width="300" height="600" fill="#002395"/>
+    </svg>
+  </button>
+  
+  <button class="lang-btn" data-lang="en" title="English">
+    <!-- Drapeau Britannique (SVG) -->
+    <svg class="flag-svg" viewBox="0 0 60 30" xmlns="http://www.w3.org/2000/svg">
+      <clipPath id="uk-clip"><path d="M0,0 v30 h60 v-30 z"/></clipPath>
+      <g clip-path="url(#uk-clip)">
+        <path d="M0,0 v30 h60 v-30 z" fill="#012169"/>
+        <path d="M0,0 L60,30 M60,0 L0,30" stroke="#ffffff" stroke-width="6"/>
+        <path d="M0,0 L60,30 M60,0 L0,30" stroke="#C8102E" stroke-width="4"/>
+        <path d="M30,0 v30 M0,15 h60" stroke="#ffffff" stroke-width="10"/>
+        <path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6"/>
+      </g>
+    </svg>
+  </button>
+  
+  <button class="lang-btn" data-lang="de" title="Deutsch">
+    <!-- Drapeau Allemand (SVG) -->
+    <svg class="flag-svg" viewBox="0 0 5 3" xmlns="http://www.w3.org/2000/svg">
+      <rect width="5" height="3" fill="#000000"/>
+      <rect width="5" height="2" y="1" fill="#FF0000"/>
+      <rect width="5" height="1" y="2" fill="#FFCE00"/>
+    </svg>
+  </button>
+</div>
 
     <div class="nav-toggle" aria-label="Menu">
       <span></span><span></span><span></span>
@@ -66,18 +94,18 @@
   <!-- Contenu centré -->
   <div class="hero-content-full">
     <div class="container">
-      <h1 class="hero-full-title">
+      <h1 class="hero-full-title" data-i18n="hero.title">
         Inspiration, Solidarité<br>
         et Développement
       </h1>
       
-      <p class="hero-full-subtitle">
+      <p class="hero-full-subtitle" data-i18n="hero.subtitle">
         L'ONG Action Population Plus œuvre depuis 2003 pour le développement harmonieux des populations togolaises à travers la santé, l'éducation, et l'autonomisation des femmes et des jeunes.
       </p>
 
       <div class="hero-full-buttons">
-        <a href="#dons" class="btn-hero-cta primary">Faire un Don</a>
-        <a href="#about" class="btn-hero-cta outline">En savoir plus</a>
+        <a href="#dons" class="btn-hero-cta primary" data-i18n="hero.btn.donate">Faire un Don</a>
+        <a href="#about" class="btn-hero-cta outline" data-i18n="hero.btn.discover">En savoir plus</a>
       </div>
     </div>
   </div>

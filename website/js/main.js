@@ -9,7 +9,10 @@ const t = {
     'nav.galerie':'Activités','nav.partenaires':'Partenaires','nav.contact':'Contact',
     'nav.donate':'Faire un Don',
     'hero.badge':'ONG reconnue • Togo depuis 2003',
-    'hero.subtitle':'Contribuer au développement harmonieux et intégral<br />des populations urbaines et rurales du Togo.',
+    'hero.title':'Inspiration, Solidarité<br>et Développement',
+    'hero.subtitle':'L\'ONG Action Population Plus œuvre depuis 2003 pour le développement harmonieux des populations togolaises à travers la santé, l\'éducation, et l\'autonomisation des femmes et des jeunes.',
+    'hero.btn.donate':'Faire un Don',
+    'hero.btn.discover':'En savoir plus',
     'hero.quote':'« Nous devons apprendre à vivre ensemble comme des frères, sinon nous allons mourir tous ensemble comme des idiots. »',
     'hero.discover':'Découvrir l\'APP','hero.tagline':'FAIRE PLUS POUR LES PROBLÈMES DE POPULATION',
     'hero.stat1':'Années d\'expérience','hero.stat2':'Programmes actifs','hero.stat3':'Régions couvertes',
@@ -168,7 +171,10 @@ const t = {
     'nav.galerie':'Gallery','nav.partenaires':'Partners','nav.contact':'Contact',
     'nav.donate':'Donate',
     'hero.badge':'Recognized NGO • Togo since 2003',
-    'hero.subtitle':'Contributing to the harmonious and integral development<br />of urban and rural populations in Togo.',
+    'hero.title':'Inspiration, Solidarity<br>and Development',
+    'hero.subtitle':'Action Population Plus NGO has been working since 2003 for the harmonious development of Togolese populations through health, education, and the empowerment of women and youth.',
+    'hero.btn.donate':'Make a Donation',
+    'hero.btn.discover':'Learn More',
     'hero.quote':'"We must learn to live together as brothers or perish together as fools."',
     'hero.discover':'Discover APP','hero.tagline':'DOING MORE FOR POPULATION CHALLENGES',
     'hero.stat1':'Years of experience','hero.stat2':'Active programmes','hero.stat3':'Regions covered',
@@ -327,7 +333,10 @@ const t = {
     'nav.galerie':'Galerie','nav.partenaires':'Partner','nav.contact':'Kontakt',
     'nav.donate':'Spenden',
     'hero.badge':'Anerkannte NGO • Togo seit 2003',
-    'hero.subtitle':'Beitrag zur harmonischen und integralen Entwicklung<br />der städtischen und ländlichen Bevölkerung Togos.',
+    'hero.title':'Inspiration, Solidarität<br>und Entwicklung',
+    'hero.subtitle':'Die NGO Action Population Plus setzt sich seit 2003 für die harmonische Entwicklung der togolesischen Bevölkerung durch Gesundheit, Bildung und die Stärkung von Frauen und Jugendlichen ein.',
+    'hero.btn.donate':'Spenden',
+    'hero.btn.discover':'Mehr erfahren',
     'hero.quote':'„Wir müssen lernen, als Brüder zusammenzuleben, sonst werden wir als Narren gemeinsam umkommen."',
     'hero.discover':'APP entdecken','hero.tagline':'MEHR FÜR BEVÖLKERUNGSPROBLEME TUN',
     'hero.stat1':'Jahre Erfahrung','hero.stat2':'Aktive Programme','hero.stat3':'Abgedeckte Regionen',
@@ -520,7 +529,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const lang = btn.getAttribute('data-lang');
       localStorage.setItem('app-lang', lang);
       applyTranslations(lang);
-      if (navToggle && navLinks) {
+      if (typeof navToggle !== 'undefined' && typeof navLinks !== 'undefined' && navToggle && navLinks) {
         navToggle.classList.remove('open');
         navLinks.classList.remove('open');
       }
@@ -792,123 +801,53 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // =========================================
-// HERO FULL-WIDTH CAROUSEL
-// =========================================
-document.addEventListener('DOMContentLoaded', () => {
+  // HERO FULL-WIDTH CAROUSEL (Version unique et nettoyée)
+  // =========================================
   const slides = document.querySelectorAll('.hero-slide');
   const dots = document.querySelectorAll('.hero-dot');
   const heroSection = document.querySelector('.hero-full-section');
   
-  if (slides.length === 0) return;
-  
-  let currentSlide = 0;
-  let autoPlayInterval;
-  const slideDuration = 5000; // 5 secondes
+  if (slides.length > 0) {
+    let currentSlide = 0;
+    let autoPlayInterval;
+    const slideDuration = 5000;
 
-  function goToSlide(index) {
-    slides[currentSlide].classList.remove('active');
-    dots[currentSlide].classList.remove('active');
-    
-    currentSlide = (index + slides.length) % slides.length;
-    
-    slides[currentSlide].classList.add('active');
-    dots[currentSlide].classList.add('active');
-  }
+    function goToSlide(index) {
+      slides[currentSlide].classList.remove('active');
+      if (dots[currentSlide]) dots[currentSlide].classList.remove('active');
+      
+      currentSlide = (index + slides.length) % slides.length;
+      
+      slides[currentSlide].classList.add('active');
+      if (dots[currentSlide]) dots[currentSlide].classList.add('active');
+    }
 
-  function nextSlide() {
-    goToSlide(currentSlide + 1);
-  }
+    function nextSlide() {
+      goToSlide(currentSlide + 1);
+    }
 
-  function startAutoPlay() {
-    autoPlayInterval = setInterval(nextSlide, slideDuration);
-  }
+    function startAutoPlay() {
+      clearInterval(autoPlayInterval);
+      autoPlayInterval = setInterval(nextSlide, slideDuration);
+    }
 
-  function stopAutoPlay() {
-    clearInterval(autoPlayInterval);
-  }
+    function stopAutoPlay() {
+      clearInterval(autoPlayInterval);
+    }
 
-  // Clic sur les dots
-  dots.forEach((dot, index) => {
-    dot.addEventListener('click', () => {
-      goToSlide(index);
-      stopAutoPlay();
-      startAutoPlay();
+    dots.forEach((dot, index) => {
+      dot.addEventListener('click', () => {
+        goToSlide(index);
+        stopAutoPlay();
+        startAutoPlay();
+      });
     });
-  });
 
-  // Pause au survol
-  if (heroSection) {
-    heroSection.addEventListener('mouseenter', stopAutoPlay);
-    heroSection.addEventListener('mouseleave', startAutoPlay);
+    if (heroSection) {
+      heroSection.addEventListener('mouseenter', stopAutoPlay);
+      heroSection.addEventListener('mouseleave', startAutoPlay);
+    }
+
+    startAutoPlay();
   }
-
-  // Lancer le carrousel
-  startAutoPlay();
 });
-
-// =========================================
-// HERO CAROUSEL - DÉFILEMENT AUTOMATIQUE
-// =========================================
-document.addEventListener('DOMContentLoaded', () => {
-  const slides = document.querySelectorAll('.hero-slide');
-  const dots = document.querySelectorAll('.hero-dot');
-  const heroSection = document.querySelector('.hero-full-section');
-  
-  // Si aucun carrousel trouvé, on arrête
-  if (slides.length === 0) return;
-  
-  let currentSlide = 0;
-  let autoPlayInterval;
-  const slideDuration = 5000; // ⏱️ 5000ms = 5 secondes (modifiable)
-
-  // Fonction pour aller à une slide spécifique
-  function goToSlide(index) {
-    // Retirer la classe active de la slide et du dot actuels
-    slides[currentSlide].classList.remove('active');
-    if (dots[currentSlide]) dots[currentSlide].classList.remove('active');
-    
-    // Calculer le nouvel index (boucle infinie)
-    currentSlide = (index + slides.length) % slides.length;
-    
-    // Ajouter la classe active à la nouvelle slide et au nouveau dot
-    slides[currentSlide].classList.add('active');
-    if (dots[currentSlide]) dots[currentSlide].classList.add('active');
-  }
-
-  // Passer à la slide suivante
-  function nextSlide() {
-    goToSlide(currentSlide + 1);
-  }
-
-  // Démarrer le défilement automatique
-  function startAutoPlay() {
-    stopAutoPlay(); // Évite les doublons d'intervalles
-    autoPlayInterval = setInterval(nextSlide, slideDuration);
-  }
-
-  // Arrêter le défilement automatique
-  function stopAutoPlay() {
-    clearInterval(autoPlayInterval);
-  }
-
-  // Clic sur les dots pour navigation manuelle
-  dots.forEach((dot, index) => {
-    dot.addEventListener('click', () => {
-      goToSlide(index);
-      stopAutoPlay();
-      startAutoPlay(); // Redémarre le timer après clic
-    });
-  });
-
-  // Pause au survol de la souris (meilleure UX)
-  if (heroSection) {
-    heroSection.addEventListener('mouseenter', stopAutoPlay);
-    heroSection.addEventListener('mouseleave', startAutoPlay);
-  }
-
-  // 🚀 Lancer le carrousel au chargement de la page
-  startAutoPlay();
-});
-
-});
-
